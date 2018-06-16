@@ -1,0 +1,41 @@
+ADDRESS_ID,CUSTOMER_ID,SHIPPING_ADDRESS,ADDRESS_NAME
+1,1,"01 Kings Junction,Gujarat,India,395003",Primary
+2,2,"83205 Kipling Point,Andhra Pradesh,India,532663",Primary
+3,3,"249 Ohio Place,Uttar Pradesh,India,281002",Primary
+4,4,"1058 Northridge Road,Gujarat,India,395003",Primary
+5,5,"55526 Scoville Hill,Uttar Pradesh,India,281002",Primary
+6,6,"55 Ridgeview Drive,Andhra Pradesh,India,532663",Primary
+7,7,"7 Spaight Park,Andhra Pradesh,India,532663",Primary
+8,8,"68 Heath Center,Gujarat,India,395003",Primary
+9,9,"12153 Farmco Point,Andhra Pradesh,India,532663",Primary
+10,10,"2 Ronald Regan Place,Gujarat,India,395003",Primary
+11,11,"5709 Fallview Hill,Gujarat,India,395003",Primary
+12,12,"0 Eastwood Plaza,Gujarat,India,395003",Primary
+13,13,"2 Butternut Junction,Gujarat,India,395003",Primary
+14,14,"2 Armistice Street,Andhra Pradesh,India,532663",Primary
+15,15,"4 Talmadge Avenue,Andhra Pradesh,India,532663",Primary
+16,16,"803 Red Cloud Park,Andhra Pradesh,India,532663",Primary
+17,17,"742 Elmside Terrace,Andhra Pradesh,India,532663",Primary
+18,18,"58 Northwestern Place,Andhra Pradesh,India,532663",Primary
+19,19,"8769 Pierstorff Terrace,Andhra Pradesh,India,532663",Primary
+20,20,"146 Bunker Hill Circle,Andhra Pradesh,India,532663",Primary
+21,1,"8 Farwell Junction,Gujarat,India,395003",Secondary
+22,2,"6 Melody Drive,Gujarat,India,395003",Secondary
+23,3,"4938 Prairieview Point,Uttar Pradesh,India,281002",Secondary
+24,4,"6991 Morrow Place,Andhra Pradesh,India,532663",Secondary
+25,5,"1 American Junction,Andhra Pradesh,India,532663",Secondary
+26,6,"78572 Rockefeller Court,Uttar Pradesh,India,281002",Secondary
+27,7,"59679 Colorado Alley,Gujarat,India,395003",Secondary
+28,8,"99 Huxley Center,Gujarat,India,395003",Secondary
+29,9,"6895 Sutteridge Alley,Gujarat,India,395003",Secondary
+30,10,"429 Summit Plaza,Gujarat,India,395003",Secondary
+31,11,"4779 Buell Pass,Andhra Pradesh,India,532663",Secondary
+32,12,"2048 Rockefeller Point,Andhra Pradesh,India,532663",Secondary
+33,13,"3183 Clarendon Center,Uttar Pradesh,India,281002",Secondary
+34,14,"73 Talmadge Court,Uttar Pradesh,India,281002",Secondary
+35,15,"5909 Mosinee Terrace,Gujarat,India,395003",Secondary
+36,16,"09 Mariners Cove Center,Andhra Pradesh,India,532663",Secondary
+37,17,"770 Ridgeview Lane,Andhra Pradesh,India,532663",Secondary
+38,18,"59252 David Parkway,Gujarat,India,395003",Secondary
+39,19,"834 Montana Point,Uttar Pradesh,India,281002",Secondary
+40,20,"2912 Jenna Trail,Uttar Pradesh,India,281002",Secondary

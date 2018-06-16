@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="lib/alasql.js"></script>
+<script src="lib/db.js"></script>
+<script src="lib/jquery.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet" />
+<script src="lib/bootstrap.js"></script>
+<script src="lib/purl.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="viewport" content="width=device-width">
+<title>COMPANY</title>
+
+<style type="text/css">
+.employeeRow:hover  {
+	background-color: highlight;
+	cursor: pointer;
+}
+.background-gray {
+background-color: gray;
+color:white;
+cursor: pointer;
+}
+
+.center-div {
+	margin: 0 auto;
+	width: 500px;
+	margin-top: 200px;
+}
+
+.db-button {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+</style>
+<script type="text/javascript">
+	if(localStorage.authId) {
+			 window.location = "/";
+		}
+</script>
+
+</head>
+	<body>
+	<button type="button" onclick="DB.init();" class="btn btn-warning db-button" data-placement="left" data-toggle="tooltip" title="Click on this button if unable to login.">Relaoad DB</button>
+	<!-- <form> -->
+	<div class="center-div">
+		<form class="form-group" id = "loginForm">
+			<label for="username">Username</label>
+			<input type="text" id="username" class="form-control" required="true" autofocus="true">
+			<label for="Password">Password</label>
+			<input type="password" id="password" class="form-control" required="true">
+			<label></label>
+			<input type="submit" id="login" value="Login" class="form-control btn btn-primary">
+		</form>
+	</div>
+	<!-- </form> -->
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+
+			$("#loginForm").submit(login);
+
+			function login(e) {
+				e.preventDefault();
+				 var userId =  $("#username").val().trim();
+				 var password = $("#password").val().trim();
+				 var res = alasql("select * from login_details where emp_id = ? and password = ?", [userId, password]);
+				 if(res.length == 1) {
+				 	localStorage.setItem("authId", (Math.random() * (9999999- 999999) + 9999999));
+					 sessionStorage.setItem("authId", (Math.random() * (9999999- 999999) + 9999999));
+					 var details = alasql("select * from user_details as ud inner join user_role as ur on ud.emp_id = ur.emp_id inner join user_warehouse as uw on ud.emp_id = uw.emp_id inner join warehouse_details as wd on wd.warehouse_id = uw.warehouse_id where ud.emp_id = ?", [userId]);
+					localStorage.setItem("userDetails", JSON.stringify(details[0]));
+					 sessionStorage.setItem("userDetails", JSON.stringify(details[0]));
+				 	window.location = "index.html";
+				 } else {
+				 	alert("Enter Correct id password")
+				 }
+			}
+		</script>
+	</body>
+</html>

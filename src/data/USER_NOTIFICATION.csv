@@ -1,0 +1,6 @@
+MESSAGE,WAREHOUSE_ID,LINK,ROLE_ID
+New Transfer Request,3,/order/transfer/1,1
+New Transfer Request,4,/order/transfer/2,1
+New Transfer Request,3,/order/transfer/3,1
+New Transfer Request,4,/order/transfer/4,1
+New Transfer Request,1,/order/transfer/5,1

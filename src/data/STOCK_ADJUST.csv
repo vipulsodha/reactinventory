@@ -1,0 +1,8 @@
+ADJUST_ID,ADJUST_DATETIME,WAREHOUSE_ID,EMP_ID,ADJUST_REASON,ADJUST_DESCRIPTION
+1,21/12/2016,1,INV00104,Fire,fire broke out
+2,21/12/2016,1,INV00104,Gift,Gift from supplier
+3,21/12/2016,2,INV00105,Fire,Fire broke out
+4,21/12/2016,2,INV00105,Gift,Gift received from supplier
+5,21/12/2016,3,INV00106,Gift,Gift from supplier
+6,21/12/2016,3,INV00106,Fire,Fire broke out
+7,21/12/2016,4,INV00107,Gift,gift from supplier
